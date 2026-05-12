@@ -1,0 +1,32 @@
+<p>tag-listas works!</p>
+
+<h1>Esta é a minha Tag Listas</h1>
+<p> a minha lista não ordenada estática</p>
+<ul>
+    <li>linha 1</li>
+    <li>linha 2</li>
+</ul>
+
+<p>a minha lista ordenada estática</p>
+<ol>
+    <li>linha a</li>
+    <li>linha b</li>
+</ol>
+
+<p>a minha lista não ordenada dinâmica</p>
+<ul>
+    @for (item of this.minhaLista; track $index) {
+        <!-- Interpolação no Angular é chamado de PropertyBind {{ }}-->
+        <li>{{"minha lista:" + item.toLocaleUpperCase()}}</li>
+    }
+    
+</ul>
+
+<p>a minha lista ordenada dinâmica</p>
+<ol>
+    @for (data of this.minhaLista; track $index) {
+         <!-- Interpolação no Angular é chamado de PropertyBind {{ }}-->
+        <!-- por causa do Any não tenho acesso aos mmetodos herdados do JS-->
+         <li>{{ data + "minha lista"}}</li>
+    }
+</ol>
