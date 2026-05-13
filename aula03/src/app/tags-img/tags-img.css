@@ -1,0 +1,9 @@
+.image {
+    width: 200px;
+}
+/* quando eu uso uma classe eu preciso do ponto */
+
+img {
+    width: 100%;
+}
+/* uando uso uma tag não preciso do ponto */
